@@ -1,0 +1,726 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*************** MY CODE STARTS HERE ************/
+html {
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+    font-size: 20px;
+    color: #554c4d;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h1,
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+header {
+    background-image: url("/assets/hero\ img.png");
+    background-position: center;
+    min-height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*************** NAV BAR ************/
+
+.navbar a {
+    color: #6497f2;
+    transition: ease-out 0.3s;
+}
+
+.navbar a:hover {
+    color: #6497f2;
+    transition: 0.3s;
+}
+
+.navbar ul {
+    width: auto;
+    float: right;
+    margin-top: 20px;
+}
+
+.navbar li {
+    display: inline;
+    padding: 15px 30px;
+    font-weight: 900;
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-default {
+    background: none;
+    border: 0;
+}
+
+.pre-order-text {
+    font-size: 1.2rem;
+}
+
+.pre-order-text a {
+    color: #fff;
+}
+
+/**************** HERO SECTION ********************/
+
+.flex-container {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    width: 600px;
+}
+
+/*************** PROMOS SECTION **********/
+.flex-container-promo {
+    width: 960px;
+    display: flex;
+}
+
+.flex-items-promo {
+    border-right: solid 1px #ff6565;
+    padding-right: 40px;
+    color: #6497f2;
+}
+
+.flex-items-promo:first-child {
+    padding-left: none;
+}
+.flex-items-promo:last-child {
+    border: none;
+}
+
+.flex-items-promo {
+    display: inline-block;
+}
+
+.promo-features-part-1 {
+    display: inline-block;
+}
+
+.promo {
+    font-size: 66px;
+    padding-left: 20px;
+}
+
+.promo-text {
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: left;
+}
+
+/********** END PROMOS SECTTION ************/
+.logo {
+    width: 250px;
+}
+
+.hero-header h1 {
+    color: #ff6565;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 42px;
+    line-height: 1.5;
+}
+
+.hero-cursive-text {
+    font-family: "Cedarville Cursive", cursive;
+    margin-bottom: 50px;
+    font-size: 26px;
+    color: #b9b9b9;
+}
+
+.promo-number {
+    font-size: 4rem;
+}
+
+.hero-btn {
+    padding: 40px 100px;
+    background-color: #6497f2;
+    color: white;
+    border-radius: 8px;
+    border-style: none;
+    letter-spacing: 1.5px;
+    margin-top: 50px;
+    transition: ease-out 0.3s;
+}
+
+.hero-btn a {
+    color: #fff;
+}
+
+.hero-btn:hover {
+    background-color: #4c7dd3;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.launching-text {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.heart {
+    font-weight: 900;
+    color: #ff6565;
+}
+
+/*************** MAIN STYLES ************/
+
+.iphone {
+    height: 600px;
+}
+
+.container-steps {
+    line-height: 1.5;
+    position: relative;
+    bottom: 65px;
+    right: 70px;
+}
+
+.container-steps-reversed {
+    line-height: 1.5;
+    position: relative;
+    bottom: 65px;
+    left: 70px;
+    text-align: right;
+}
+
+.iphone-and-steps {
+    display: flex;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.iphone-and-steps-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.header-steps {
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+.connecting-lines {
+    height: 200px;
+    position: relative;
+    right: 78px;
+}
+
+.connecting-lines-reversed {
+    height: 200px;
+    position: relative;
+    left: 80px;
+}
+
+/**************** STEP 1 SECTION ---------------- > .hero-text *********/
+
+.step-1 {
+    background-color: #6497f2;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+}
+
+/**************** PRE ORDER 1 *********/
+.pre-order-1 {
+    background: #090a0c;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/**************** STEP 2 SECTION *********/
+
+.iphone-nonreverse-section {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.iphone-reverse-container {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.step-2 {
+    background-color: #ff6565;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+    color: white;
+}
+
+/**************** PRE ORDER 2 *********/
+.pre-order-2 {
+    background: #6497f2;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/**************** STEP 3 SECTION *********/
+
+.step-3 {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+}
+
+.step-3 .header-steps {
+    color: #ff6565;
+}
+
+/**************** PRE ORDER  *********/
+.pre-order-3 {
+    background: #f97171;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/**************** STEP 4 SECTION *********/
+
+.step-4 {
+    background: #6497f2;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+}
+
+/**************** PRE ORDER  *********/
+.pre-order-4 {
+    background: #2e2f31;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/**************** FOOTER *********/
+footer {
+    background: #0c0d0f;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+footer a {
+    color: #f97171;
+}
+
+.footer-period {
+    color: #f97171;
+}
+
+form {
+    width: 500px;
+}
+
+.form-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-form-header {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    padding-bottom: 30px;
+}
+
+input {
+    width: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+
+.form-button {
+    position: relative;
+    right: 7px;
+    top: 4.4px;
+    border: none;
+    background-color: #6497f2;
+    padding: 15.9px 30px;
+    transition: ease-out 0.3s;
+}
+
+.form-button a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.form-button:hover {
+    background-color: #4c7dd3;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.follow-us {
+    margin-top: 50px;
+}
+
+/******* MEDIA QUERIES **************/
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    .hero-header h1 {
+        font-size: 28px;
+    }
+
+    .logo {
+        width: 175px;
+    }
+
+    .hero-btn {
+        padding: 30px 20px;
+    }
+
+    .launching-text {
+        font-size: 16px;
+    }
+
+    /*************** PROMOS SECTION **********/
+    .flex-item {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .flex-container-promo {
+        width: 767px;
+        margin: 0 auto;
+    }
+
+    .flex-items-promo {
+        border-right: solid 1px #ff6565;
+        padding-right: 10px;
+        color: #6497f2;
+    }
+
+    .promo {
+        font-size: 42px;
+        padding-left: 20px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    .promo-text {
+        font-size: 12px;
+        line-height: 1.3;
+        text-align: left;
+    }
+
+    /********** END PROMOS SECTTION ************/
+
+    .iphone {
+        height: 300px;
+    }
+
+    .container-steps {
+        bottom: 12px;
+        right: 30px;
+    }
+
+    .container-steps-reversed {
+        bottom: 12px;
+        left: 30px;
+    }
+
+    .iphone-and-steps {
+        display: flex;
+        align-items: center;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    .iphone-and-steps-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    .header-steps {
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+
+    .header-steps.bottom-steps {
+        position: relative;
+        top: 8px;
+    }
+
+    .paragraph-steps {
+        font-size: 14px;
+    }
+
+    .connecting-lines {
+        height: 75px;
+        right: 40px;
+    }
+
+    .connecting-lines-reversed {
+        height: 75px;
+        left: 40px;
+    }
+
+    .form {
+        width: 480px;
+    }
+
+    .sign-up-form-header {
+        font-size: 20px;
+    }
+
+    input {
+        width: 300px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+    }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    section {
+        padding: 25px 0;
+    }
+
+    .flex-container {
+        padding-top: 20px;
+    }
+
+    .launching-text {
+        font-size: 16px;
+        width: 70%;
+        margin: 0 auto;
+        line-height: 1.5;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    /*************** PROMOS SECTION **********/
+
+    .flex-container-promo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-items-promo {
+        position: relative;
+        margin-right: 392px;
+        border: none;
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+
+    .promo {
+        font-size: 50px;
+    }
+
+    .promo-text {
+        position: relative;
+        bottom: 5px;
+    }
+
+    .hero-btn {
+        padding: 30px 30px;
+    }
+
+    /********** END PROMOS SECTTION ************/
+
+    .form {
+        width: 340px;
+    }
+    .contact-form {
+        width: 100%;
+    }
+
+    .sign-up-form-header {
+        font-size: 16px;
+    }
+
+    input {
+        width: 200px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+    }
+
+    .connecting-lines-reversed {
+        position: relative;
+    }
+}
